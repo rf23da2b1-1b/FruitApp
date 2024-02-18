@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FruitLib.repository
 {
-    public interface IRepositoryGeneric<T>
+    public interface IRepositoryGeneric<T> where T : IModel
     {
         List<T> ReadAll();      // eller GetAll
         T ReadById(int id);     // eller GetById
