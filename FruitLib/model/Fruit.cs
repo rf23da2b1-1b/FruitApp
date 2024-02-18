@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FruitLib.repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FruitLib.model
 {
-    public class Fruit
+    public class Fruit:IModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
